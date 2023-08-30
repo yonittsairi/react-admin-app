@@ -1,0 +1,14 @@
+version: "3"
+services:
+  users-clientbo:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+    networks:
+      - technician-clientbo-network
+
+networks:
+  users-clientbo-network:
+    driver: bridge
