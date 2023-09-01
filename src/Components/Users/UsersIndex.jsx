@@ -90,7 +90,7 @@ const UsersList = (props) => {
       sort={{ field: "id", order: "DESC" }}
       actions={<ListActions />}
     >
-      <Datagrid rowClick="show" bulkActionButtons={false} optimized>
+      <Datagrid bulkActionButtons={false} optimized>
         <TextField
           source="id"
           bulkActionButtons={false}
