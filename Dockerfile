@@ -1,7 +1,7 @@
 FROM node:14-alpine
 
 # set working directory
-WORKDIR /technician-clientbo/src/app
+WORKDIR /users-bo/src/app
 
 # install app dependencies
 COPY package*.json ./

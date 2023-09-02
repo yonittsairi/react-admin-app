@@ -1,1 +1,1 @@
-export const url = (process.env.REACT_APP_API_URL ? "https://" + process.env.REACT_APP_API_URL : window.location.origin);
+export const url = "http://localhost:3555";
