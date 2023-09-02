@@ -64,7 +64,7 @@ const App = () => {
     stylisPlugins: [prefixer, rtlPlugin],
   });
   const Resources = [
-    <Resource name="user" list={Users.list} />,
+    <Resource name="user" list={Users.list} create={Users.create} />,
     <Resource name="hobbies" create={HobbiesIndex.create} />,
   ];
 
