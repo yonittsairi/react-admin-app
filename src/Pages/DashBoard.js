@@ -4,7 +4,7 @@ import { Title } from "react-admin";
 
 export const DashBoard = () => (
   <Card>
-    <Title title="Afikim" />
+    <Title title="users" />
   </Card>
 );
 export default DashBoard;

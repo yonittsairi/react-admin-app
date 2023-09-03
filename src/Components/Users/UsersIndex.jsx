@@ -64,10 +64,10 @@ const UserCreate = (props) => {
   );
 };
 
-const Icon = () => {
+const CreateIcon = ({ text }) => {
   return <div style={{ fontSize: 14 }}>
     <AddIcon />
-    {'Create Hobby'}
+    {`Create ${text}`}
   </div>
 }
 const ListActions = () => {
@@ -77,10 +77,16 @@ const ListActions = () => {
       color="primary"
       size="small"
       onClick={() => redirect('/hobbies/create')}
-      startIcon={<Icon />}
+      startIcon={<CreateIcon text='hobby' />}
     >
     </Button>
-    <CreateButton />
+    <Button
+      color="primary"
+      size="small"
+      onClick={() => redirect('/user/create')}
+      startIcon={<CreateIcon text='user' />}
+    >
+    </Button>
   </TopToolbar>
 }
 const UsersList = (props) => {
